@@ -430,7 +430,7 @@ export class XfyunASR {
         const frame: XfyunWebsocketRequest = {
           header: {
             app_id: this.options.appId,
-            res_id: this.options.resId,
+            res_id: this.options.resId || "",
             status: 1,
           },
           payload: {
